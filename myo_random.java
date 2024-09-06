@@ -1,0 +1,2 @@
+class myo_random [
+]
