@@ -22,6 +22,15 @@ System.out.println ("The numbers of cookies per bowl is: " + (144/6));
         System.out.println(amount);
         System.out.println("Two dozen is 24");
         System.out.print("Twenty-eight is: " + amount);
+     int amount = 8;
+amount = amount + 1;
+System.out.println(amount);
+int a = 8;
+int b = 3;
+System.out.println(a*b);
+System.out.println(a/b);
+double a2 = 8.0;
+System.out.println(a2/b);
     // your code ends here!
     
   }
