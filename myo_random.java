@@ -17,7 +17,13 @@ System.out.println(" cookies for each bowl.");
 System.out.print("Sanjay has "+ 6 + " for " + 144 + " cookies.");
 System.out.println("The number of cookies per bowl is");
 System.out.println ("The numbers of cookies per bowl is: " + (144/6));
+    System.out.println(24);
+        int amount = 24;
+        System.out.print(amount);
+        System.out.println(" Two dozen is");
+        System.out.println(amount);
     // your code ends here!
+    
   }
 }
 ]
