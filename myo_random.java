@@ -32,7 +32,6 @@ System.out.println(a/b);
 double a2 = 8.0;
 System.out.println(a2/b);
 
-    
     System.out.print("I was born in ");
 int year = 2009;
 System.out.print(year);
@@ -41,6 +40,9 @@ System.out.print("I am ");
 int age = 14;
 System.out.print(age);
 System.out.println(" years old.");
+System.out.println(age*2 + 5);
+System.out.println((age*2 + 5)*50 + 14);
+System.out.println((((age*2 + 5)*50 + 14) - 250)/100);
     // your code ends here!
     
   }
