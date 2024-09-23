@@ -44,7 +44,33 @@ System.out.println(age*2 + 5);
 System.out.println((age*2 + 5)*50 + 14);
 System.out.println((((age*2 + 5)*50 + 14) - 250)/100);
     // your code ends here!
+
+
     
+  /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package assignment1;
+import java.util.Scanner
+import java.lang.Math
+/**
+ *
+ * @author 875487
+ */
+public class Assignment1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //TODO code application logic here
+        System.print.ln("Hello user!");
+    }
+    
+}
+
   }
 }
 ]
