@@ -49,21 +49,49 @@ System.out.println((((age*2 + 5)*50 + 14) - 250)/100);
 
 
 
+
+
+
+
+    
+
+
     
     /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package assignment1;
+    
+/* 
+Student: Yangchen 875487
+Date: Sept 30, 2024
+Course: ICD 2O0
+Assignment: Assignment1, Java and Math Formulas
+Description: A simple code that will solve for the area of a rectangle, the area of a circle, the volume of a cylinder, the surface area of a cylinder, and the period of time it takes (in seconds) for a pendulum to make one back-and-forth swing.
+Variable Dictionary: 
+- length (int) = The length of a rectangle to find the area of the rectangle
+- width (int) = The width of a rectangle to find the width of the rectangle
+- radius (int) = The radius of a circle to find the area of the circle
+- radius3 (int) = The radius of a cylinder to find the volume of the cylinder
+- height (int) = The height of a cylinder to find the volume of the cylinder
+- radius4 (int) = The radius of a cylinder to find the surface area of the cylinder
+- height4 (int) = The height of a cylinder to find the surface area of the cylinder
+- length5 (int) = The length of a pendulum to find the period of the time it takes for it to make one back-and-forth swing in seconds
+- double gravity (double int) = The acceleration of gravity to find the period of the time it takes for a pendulum to make one back-and-forth swing in seconds
+
+*/
+
+package assignment1; // States the file name
 import java.util.Scanner; // Library of java language
 import java.lang.Math; // Library of java math
 /**
  *
  * @author 875487
  */
-public class Assignment1 {
+public class Assignment1 { 
 
+  
     /**
      * @param args the command line arguments
      */
@@ -75,52 +103,49 @@ public class Assignment1 {
         System.out.println("Input the length of the rectangle: "); // Location where the user inputs their value
          int length = 0; // declaration of length
         int width = 0; // declaration of width
-        int area = 0; // declaration of area
         length = sc.nextInt(); // Allows the user to input the value of length
         System.out.println("Input the width of the rectangle: "); // Location where the user inputs their value
         width = sc.nextInt(); // Allows the user to input the value of width
         System.out.printf("The area is: %d x %d = %d", length, width, length * width); // Calculates the value of area of the rectangle
       
         
-        System.out.println(" Next, let's calculate the area of a circle");
-        System.out.println("Input the radius of the circle: ");
-        int radius = 0;
-        radius = sc.nextInt();
-        System.out.printf("The area is: %d x %f x %d = %f", radius, Math.PI, radius, radius * Math.PI * radius);
+        System.out.println(" Next, let's calculate the area of a circle"); // Informs the user that they're calculating the area of a circle
+        System.out.println("Input the radius of the circle: "); // The user inputs the radius to find their area here
+        int radius = 0; // declaration of radius
+        radius = sc.nextInt(); // Allows the user to input their radius
+        System.out.printf("The area is: %d x %f x %d = %f", radius, Math.PI, radius, radius * Math.PI * radius); // Calculates the value of the area of a circle
         
-        System.out.println(" Now, lets find the volume of a cylinder.");
-        System.out.println("Input the radius of the cylinder: ");
-        int radius3 = 0;
-        radius3 = sc.nextInt();
-        System.out.println("Input the height of the cylinder: ");
-        int height = 0;
-        height = sc.nextInt();
-        System.out.printf("The area is: %d x %d x %f x %d = %f", radius3, radius3, Math.PI, height, radius3 * height * Math.PI * height);
+        System.out.println(" Now, lets find the volume of a cylinder."); // Informs the user that they're finding the volume of a cylinder
+        System.out.println("Input the radius of the cylinder: "); // Tells the user to input their radius
+        int radius3 = 0; // declaration of radius
+        radius3 = sc.nextInt(); // allows the user to input their radius
+        System.out.println("Input the height of the cylinder: "); // tells the user to input the height of their cylinder
+        int height = 0; // declaration of height
+        height = sc.nextInt(); // allows the user to input their height
+        System.out.printf("The area is: %d x %d x %f x %d = %f", radius3, radius3, Math.PI, height, radius3 * height * Math.PI * height); // calculates the area of the cylinder
      
         
-        System.out.println(" Let's find the surface area of a cylinder!");
-        System.out.println("Input the radius of the cylinder: ");
-        int radius4 = 0;
-        radius4 = sc.nextInt();
-        System.out.println("Input the height of the cylinder: ");
-        int height4 = 0;
-        height4 = sc.nextInt();
-        System.out.printf("The surface area is: %d x %f x %d x %d + %d x %f x %d x %d = %f", 2, Math.PI, radius4, height4, 2, Math.PI, radius4, radius4, 2 * Math.PI * radius4 * height4 + 2 * Math.PI * radius4 * radius4);
+        System.out.println(" Let's find the surface area of a cylinder!"); // Informs the user they're calculating the s.a of the cylinder
+        System.out.println("Input the radius of the cylinder: "); // tells the user that they first need to input their radius
+        int radius4 = 0; // declaration of radius
+        radius4 = sc.nextInt(); // allows the user to input their radius
+        System.out.println("Input the height of the cylinder: "); // tells the user to input their height
+        int height4 = 0; // declaration of height
+        height4 = sc.nextInt(); // allows the user to input their height
+        System.out.printf("The surface area is: %d x %f x %d x %d + %d x %f x %d x %d = %f", 2, Math.PI, radius4, height4, 2, Math.PI, radius4, radius4, 2 * Math.PI * radius4 * height4 + 2 * Math.PI * radius4 * radius4); // calculates the s.a of the cylinder
         
-        System.out.println(" Finally, let's find the period of the time it takes for a pendulum to make one back-and-forth swing in seconds.");
-        System.out.println("Input the length of the pendulum in meters: ");
-        int length5 = 0;
-        length5 = sc.nextInt();
-        double gravity = 9.8;
-        System.out.printf("The time in seconds that it takes for the pendulum to swing is: %d x %f / %d / %f = %f", 2, Math.PI, length5, gravity, 2 * Math.PI * Math.sqrt(length5 / gravity));
-        sc.close();
+        System.out.println(" Finally, let's find the period of the time it takes for a pendulum to make one back-and-forth swing in seconds."); // Informs the user that they're calculating to find the period of time (in seconds) that it takes for a pendulum to swing back and forth once
+        System.out.println("Input the length of the pendulum in meters: "); // tells the user to input the length of their pendulum
+        int length5 = 0; // declaration of length
+        length5 = sc.nextInt(); // allows the user to input their length
+        double gravity = 9.8; // declaration that the acceleration of gravity is 9.8
+        System.out.printf("The time in seconds that it takes for the pendulum to swing is: %d x %f / %d / %f = %f", 2, Math.PI, length5, gravity, 2 * Math.PI * Math.sqrt(length5 / gravity)); // calculates the number of seconds it takes for the pendulum to swing back and forth once
+        sc.close(); // closes the scanner
     }
     
 }
 
-    (Code ends there!)
-
-    }
+ 
     
 }
 
