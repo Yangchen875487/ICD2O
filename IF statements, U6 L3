@@ -1,1 +1,22 @@
+import java.util.Scanner;
 
+class marks {
+ public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+   System.out.print("Please enter a percentage mark: ");
+   int number = sc.nextInt();
+   
+    if (number >= 80) {
+         System.out.println(number + " The letter grade is A.");
+     } else if (number >= 70) {
+         System.out.println(number + " The letter grade is B.");
+     } else if (number >= 60) {
+         System.out.println(number + " The letter grade is C.");
+     } else if (number >= 50) {
+         System.out.println(number + " The letter grade is D.");
+     } else if (number >= 0) {
+         System.out.println(number + " The letter grade is F.");
+ 
+     }
+}
+}
