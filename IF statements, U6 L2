@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class Calc {
  public static void main(String[] args) {
    Scanner sc = new Scanner(System.in);
    
@@ -25,16 +25,17 @@ switch (operator) {
  result = number1 - number2;
     break;
     
- case '*';
+ case '*':
  result = number1 * number2;
     break;
     
- case '/';
+ case '/':
  result = number1 / number2;
     break;
-  default: 0
-    // code block
+  default:
 }
+  System.out.println(number1 + " " + operator + " " + number2 + " = " + result);
+
      
 }
 }
