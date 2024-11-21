@@ -1,0 +1,14 @@
+class strings {
+    public static void main(String[] args) {
+    String s1 = "fortify";
+    String s2 = "shellac";
+    String s3 = "shellshock";
+    if (s1.compareTo(s2) < 0) {
+   System.out.println(s1 + " comes before " + s2);
+    if (s2.compareTo(s3) < 0) {
+   System.out.println(s2 + " comes before " + s3);
+ 
+}
+    }
+}
+}
