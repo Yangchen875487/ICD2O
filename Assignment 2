@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class Main {
+ public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+   System.out.print("Enter a whole number: ");
+   int n = sc.nextInt();
+   
+   do {
+            System.out.print("Enter a whole number > 0: ");
+            int n = scanner.nextInt();
+            if (n <= 0) {
+                System.out.println("Please enter a positive whole number.");
+                continue;
+             }
+             
+            StringBuilder sequence = new StringBuilder();
+            int highestValue = n;
+            int termCount = 0;
+   }    
+    while ( n != 1) {  
+   if (n % 2 == 0) {
+   System.out.print("The number is even, so " + n + " / 2 = " + n /2 );
+   n = n / 2;
+   
+   } else if (n % 2 != 0){
+   System.out.print("The number is odd, so " + n + " x 3 + 1 = ");
+   System.out.println(n = (n * 3) + 1);
+   }
+}
+}
