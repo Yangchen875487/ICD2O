@@ -3,25 +3,35 @@ import java.util.Scanner;
 class Main {
  public static void main(String[] args) {
    Scanner sc = new Scanner(System.in);
-   System.out.print("Enter a whole number > 0: ");
-   int n = sc.nextInt();
+   char more = ' ';
    
    do {
-            
-            if (n <= 0) {
-                System.out.println("Please enter a positive whole number.");
-                n = sc.nextInt();
-             }
-            int highestValue = n;
-            int termCount = 0;
-            if (n % 2 == 0) {
+   System.out.print("Enter a whole number > 0: ");
+   int n = sc.nextInt();
+   int highestvalue = n;
+   int termcount = 0;
+   System.out.print("The Collatz sequence for n = " + n + " is ");
+   while (n > 1) {
+       termcount++;
+       if (n % 2 == 0) {
             n = n / 2;
-                
             } else {
             n = 3 * n + 1;
             }
-            printf("The Collatz sequence for " + n +)
-   } while (n != 1); 
+            if (n > highestvalue){
+                highestvalue = n;
+            }
+            System.out.printf("%,d", n);
+            if (n != 1){
+            System.out.print("; ");
+            }else{
+            System.out.printf(" ");
+            }
+      }
+        System.out.println("\n" +"Number of terms = " + termcount);
+        System.out.println("Highest value reached: " + highestvalue);
+      System.out.println("Do another? (y/n) ");
+      more = sc.next().toLowerCase().charAt(0);
+  } while (more == 'y');
    }
-}
-
+}   
