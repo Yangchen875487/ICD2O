@@ -1,4 +1,17 @@
-import java.util.Scanner;
+/* 
+Student: Yangchen 875487
+Date: December 5th, 2024
+Course: ICD 2O0
+Assignment: Assignment2, The Collatz Conjecture
+Description: A code that finds the Collatz Conjecture (array of numbers) for a variable, The number of terms, and the highest value reached.
+Variable Dictionary: 
+- more (char) = Placeholder for variable
+- highestvalue (int) = Placeholder for the highest value reached
+- termcount (int) = Placeholder for the number of terms reached
+
+*/
+
+import java.util.Scanner; 
 
 class Main {
  public static void main(String[] args) {
@@ -6,32 +19,35 @@ class Main {
    char more = ' ';
    
    do {
-   System.out.print("Enter a whole number > 0: ");
+   System.out.print("Enter a whole number > 0: "); // User chooses a whole number to go through the Collatz Conjecture.
    int n = sc.nextInt();
-   int highestvalue = n;
-   int termcount = 1;
-   System.out.print("The Collatz sequence for n = " + n + " is " + n + "; ");
+   int highestvalue = n; // Defines the variable as the highest number.
+   int termcount = 1; // The termcount starts at 1.
+   System.out.print("The Collatz sequence for n = " + n + " is " + n + "; "); // Print the Collatz sequence.
    while (n > 1) {
        termcount++;
-       if (n % 2 == 0) {
+       if (n % 2 == 0) { // If the number is even, then it gets divided by 2.
             n = n / 2;
             } else {
-            n = 3 * n + 1;
+            n = 3 * n + 1; // If the number is odd, then it gets multiplied by 3 and adds 1.
             }
-            if (n > highestvalue){
-                highestvalue = n;
+            if (n > highestvalue){ // The code searches for the new highest number.
+                highestvalue = n; // Replaces the first highest number with the new one.
             }
-            System.out.printf("%,d", n);
+            System.out.printf("%,d", n); // Formats commas into thousand+ numbers.
             if (n != 1){
-            System.out.print("; ");
+            System.out.print("; "); // Adds ": " after a number in the array.
             }else{
-            System.out.printf(" ");
+            System.out.printf(" "); // Adds " " once the array is finished.
             }
       }
-        System.out.println("\n" +"Number of terms = " + termcount);
-        System.out.printf("Highest value reached: " + "%,d", highestvalue);
-      System.out.println("\n" + "Do another? (y/n) ");
-      more = sc.next().toLowerCase().charAt(0);
-  } while (more == 'y');
+        System.out.println("\n" +"Number of terms = " + termcount); // Prints the termcount.
+        System.out.printf("Highest value reached: " + "%,d", highestvalue); // Prints the highest number reached.
+      System.out.println("\n" + "Do another? (y/n) "); // User chooses whether they exit the code, or put another number through the Collatz Conjecture.
+      more = sc.next().toLowerCase().charAt(0); // Runs code regardless of whether the user types with a capital y/n or not.
+  } while (more == 'y'); // Runs the code again, if the user chooses y/Y.
+  
+  System.out.println("Goodbye!"); // Prints "Goodbye!" if the user chooses n/N.
+  sc.close();
    }
 } 
