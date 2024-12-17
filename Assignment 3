@@ -25,24 +25,24 @@ public class Main {
         char computerChoice = ' ';
          
          if (computerRandomChoice == 0) {
-                computerChoice = 'r'; // Rock
+                computerChoice = 'r'; // Computer chooses rock
             } else if (computerRandomChoice == 1) {
-                computerChoice = 'p'; // Paper
+                computerChoice = 'p'; // Computer chooses paper
             } else {
-                computerChoice = 's'; // Scissors
+                computerChoice = 's'; // Computer chooses scissors
             }
         System.out.println("Computer chose: " + computerChoice);
        
         if (playerchoice == computerChoice){
-            System.out.println("---It's a tie!!--- ");
+            System.out.println("---It's a tie!!--- "); // If the computer and user choose the same choice, they tie
             ties++;
-        } else if ((playerchoice =='r' && computerChoice =='s') ||
-                   (playerchoice =='p' && computerChoice =='r')||
-                   (playerchoice =='s' && computerChoice =='p')) {
+        } else if ((playerchoice =='r' && computerChoice =='s') || // User wins a point against computer
+                   (playerchoice =='p' && computerChoice =='r')|| // User wins a point against computer
+                   (playerchoice =='s' && computerChoice =='p')) { // User wins a point against the computer
              System.out.println("You win!");
              playerWins++;
-        }else {
-                System.out.println("Computer wins!");
+        }else { // Otherwise, the computer wins a point agaisnt the user
+                System.out.println("Computer wins!"); 
                 computerWins++;
             }
         }
@@ -54,4 +54,3 @@ public class Main {
           sc.close();
     }
    }  
-
