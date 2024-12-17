@@ -1,3 +1,19 @@
+/* 
+Student: Yangchen 875487
+Date: December 17th, 2024
+Course: ICD 2O0
+Assignment: Assignment3, Rock, Paper, Scissors.
+Description: A code that allows the user to engage in a set amount of rounds of rock paper scissors against the computer. This code tracks the number of wins the user has, the number of wins the computer has, and winner with the most amount of points/wins.
+Variable Dictionary: 
+- numGames (int) = Number of games the user plays
+- playerWins (int) = Number of wins the user has
+- computerWins (int) = Number of wins the computer has
+- ties (int) = Number of ties in game
+- playerchoice (int) = The users choice (rock, paper, or scissors)
+- computerRandomChoice (int) = The computers choice (rock, paper, or scissors)
+
+*/
+
 import java.util.Scanner;
 
 public class Main {
