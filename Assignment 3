@@ -14,11 +14,11 @@ public class Main {
 
        
     for (int n = 0; n < numGames; n++) {
-         System.out.print("Choose your move. (r = rock; p = paper, and s` = scissors): "); // User chooses what choice to play
+         System.out.print("Choose your move. (r = rock, p = paper, and s = scissors.): "); // User chooses what choice to play
           char playerchoice = sc.next().toLowerCase().charAt(0);
        
     if(playerchoice != 'r' &&  playerchoice != 's' && playerchoice != 'p' ){
-          System.out.println("Please enter (r = rock; p = paper, and s` = scissors)");
+          System.out.println("Please enter (r = rock; p = paper, and s = scissors)");
          
         }
         int computerRandomChoice = (int)(3 * Math.random());
