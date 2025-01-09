@@ -1,0 +1,9 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void Main (String[] args) {
+        String data = "ledger.dat";
+        int[] Customers = new int[40];
+        int count = 0;
+
+}
