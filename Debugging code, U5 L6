@@ -14,3 +14,14 @@ class Main {
     System.out.printf("You said: %s.\n", greeting);
   }
 }
+
+ARRAY EXAMPLE:
+class Main {
+  public static void main(String[] args) {
+    int[] balance = {1987, 1283, 5987, 1238};
+    System.out.println(balance[2]);
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    cars[0] = "Opel";
+    System.out.println(cars[2]);
+  }
+}
